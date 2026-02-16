@@ -110,3 +110,74 @@ main {
     background-color: #f8d7da;
     color: #721c24;
 }
+
+/* ================= FILTERS AND SORT SECTIONS ================= */
+
+/* Filter Section */
+.filters-section,
+.sort-section {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.filters-section h2,
+.sort-section h2 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+/* Button Containers */
+.filter-buttons,
+.sort-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+}
+
+/* Filter and Sort Buttons */
+.filter-btn,
+.sort-btn {
+    padding: 0.7rem 1.2rem;
+    border: 2px solid #667eea;
+    background-color: white;
+    color: #667eea;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+/* Hover State */
+.filter-btn:hover,
+.sort-btn:hover {
+    background-color: #667eea;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+/* Active State */
+.filter-btn.active,
+.sort-btn.active {
+    background-color: #667eea;
+    color: white;
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .filter-buttons,
+    .sort-buttons {
+        flex-direction: column;
+    }
+
+    .filter-btn,
+    .sort-btn {
+        width: 100%;
+    }
+}
